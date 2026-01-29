@@ -3,9 +3,5 @@ body {
     background: #f0f2f5;
     color: #333;
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    min-height: 100vh;
-    margin: 0;
     padding: 20px;
 }
