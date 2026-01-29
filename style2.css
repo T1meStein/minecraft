@@ -1,6 +1,7 @@
 body {
     background: url("image_wither.png");
-    
+    width: 100 %
+    opacity: 0.3
 }
 body {
     font-family: Arial, sans-serif;
