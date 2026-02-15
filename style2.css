@@ -4,22 +4,22 @@
   background-position: relative;
   background-repeat: no-repeat;
   background-attachment:fixed;
-  position: relative; /* important pour le z-index */
+  position: relative;
   padding: 50px;
-  color: white; /* texte blanc par défaut */
+  color: white;
 }
 
-/* Faire ressortir le texte */
+
 .hero h1,
 .hero p {
   position: relative;
-  z-index: 2; /* texte devant l’image */
-  text-shadow: 2px 2px 8px rgba(0,0,0,0.4); /* ombre pour lisibilité */
+  z-index: 2;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
 }
 
-/* Ajouter un fond derrière le texte pour le rendre encore plus lisible */
+
 .hero h1 {
-  background-color: rgba(0, 0, 0, 0.4); /* semi-transparent */
+  background-color: rgba(0, 0, 0, 0.4);
   padding: 8px 12px;
   border-radius: 5px;
 }
