@@ -1,8 +1,4 @@
 
-.sous-titre{
-  font-size: 25px ;
-  font-weight: bold
-  
 .hero {
   background-image: url("background_page_d'acceuil.webp");
   background-size: cover;
@@ -71,3 +67,8 @@ img {
     border-radius: 15px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.4);
 }
+
+.sous-titre{
+  font-size: 25px ;
+  font-weight: bold
+  
