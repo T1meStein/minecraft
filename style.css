@@ -35,15 +35,16 @@
   border-radius: 5px;
 }
 
-.sommaire ul,
-.sommaire ol,
-.sommaire p{
-  background: none; /* évite les doubles fonds */
-}
+
 .hero p {
   background-color: rgba(0, 0, 0, 0.4);
   padding: 6px 10px;
   border-radius: 4px;
+}
+.sommaire ul,
+.sommaire ol,
+.sommaire p{
+  background: none; /* évite les doubles fonds */
 }
 h1 {
     font-family: 'Press Start 2P', cursive;
