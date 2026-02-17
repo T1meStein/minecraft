@@ -39,7 +39,7 @@
   background: none; /* évite les doubles fonds */
 }
 
-.sommaire p {
+.hero .sommaire p {
   background: none;
   padding: 0;
 }
