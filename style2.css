@@ -56,3 +56,23 @@ img {
     border-radius: 15px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.4);
 }
+
+/* Lien normal (non visité) */
+a:link {
+  color: blue;
+}
+
+/* Lien déjà visité */
+a:visited {
+  color: cyan;
+}
+
+/* Au survol */
+a:hover {
+  color: red;
+}
+
+/* Lors du clic */
+a:active {
+  color: orange;
+}
