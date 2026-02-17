@@ -101,3 +101,7 @@ a:hover {
 a:active {
   color: orange;
 }
+
+a {
+  display: inline-block;  /* empêche l’espace après le mot d’être cliquable */
+}
