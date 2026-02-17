@@ -35,7 +35,8 @@
 }
 
 .sommaire ul,
-.sommaire ol {
+.sommaire ol,
+.sommaire p{
   background: none; /* évite les doubles fonds */
 }
 
