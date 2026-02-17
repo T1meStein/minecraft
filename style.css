@@ -1,3 +1,8 @@
+
+.sous-titre{
+  font-size: 25px ;
+  font-weight: bold
+  
 .hero {
   background-image: url("background_page_d'acceuil.webp");
   background-size: cover;
