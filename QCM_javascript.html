@@ -122,7 +122,7 @@ const questions = [
 {type:"text", q:"Quel est la hauteur maximale d'un monde depuis la 1.18 (écrit sous la forme : y=nombre) ?", r:"y=320"},
 {type:"text", q:"Quel est la dernière mise à jour en février 2026 (écrit sous la forme : The C_____ A__, 1.__._) ?", r:"The Copper Age, 1.21.9"},
 {type:"text", q:"Combien d'abonnés à Dream le 17/02/2026 (écrit sous la forme : __,_ M) ?", r:"33,8 M"},
-{type:"text", q:"Avec qui Ninjaxx faisait-t-il des vidéos jusqu'en 2024-2025 (écrit sous la forme : N___M_______, les _ représentent des minuscules) ?", r:"NinoMssclick"}
+{type:"text", q:"Avec qui Ninjaxx faisait-t-il des vidéos jusqu'en 2024-2025 (écrit sous la forme : N___M_______, les _ représentent des minuscules) ?", r:"NinoMssclick"},
 ];
 
 const quiz = document.getElementById("quiz");
@@ -174,7 +174,7 @@ function afficherScore(){
         }
 
         if(item.type==="text"){
-            const val=document.getElementById("q"+index).value.toLowerCase().trim();
+            const val=document.getElementById("q"+index).value.trim();
             if(val===item.r) bonne=true;
         }
 
