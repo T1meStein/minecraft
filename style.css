@@ -105,3 +105,41 @@ a:active {
 a {
   display: inline-block;  /* empêche l’espace après le mot d’être cliquable */
 }
+.menu-container {
+    display: flex;
+    gap: 30px; /* espace entre les boutons */
+  }
+
+  /* Bouton en tant que lien */
+  .menu-button {
+    display: flex;
+    flex-direction: column; /* texte au dessus de l'image */
+    align-items: center;
+    text-decoration: none; /* supprimer le souligné du lien */
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 200px;
+  }
+
+  .menu-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  }
+
+  /* Texte du bouton */
+  .menu-button span {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  /* Image du bouton */
+  .menu-button img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
