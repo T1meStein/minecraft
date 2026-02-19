@@ -7,7 +7,6 @@
 <style>
 body{
     font-family: Arial, sans-serif;
-    background: linear-gradient(180deg, #0f2027, #203a43, #2c5364);
     color:white;
     padding:30px;
 }
@@ -220,7 +219,14 @@ questions.forEach((item,index)=>{
     div.innerHTML+=`<div id="corr${index}"></div>`;
     quiz.appendChild(div);
 });
-
+function ChangementCouleurFond(bonnesReponses)
+	{
+  const couleur=document.body.style.backgroundColor;
+  let ab=255-bonnesReponses*10
+  let ba=bonnesReponses*10
+    document.body.style.backgroundColor="rgb("+ab+","+ba+",0)"
+    }
+    
 function afficherScore(){
 
     bonnesReponses = 0;
@@ -257,7 +263,9 @@ function afficherScore(){
         "🏆 Score final : "+bonnesReponses+" / 25";
 
   document.getElementById("btn-valider").disabled = true;
+ChangementCouleurFond(bonnesReponses)
 }
+    
 function recomencer() {
   let bonnesReponses = 0;
   document.getElementById("finalScore").innerHTML=
