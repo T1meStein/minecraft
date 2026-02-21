@@ -123,6 +123,7 @@ a {
     align-items: center;
     text-decoration: none; /* supprimer le souligné du lien */
     background-color: white;
+    font-family: 'Press Start 2P', cursive;
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
