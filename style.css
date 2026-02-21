@@ -141,6 +141,7 @@ a {
     color: #333;
     margin-bottom: 10px;
     text-align: center;
+    font-family: 'Press Start 2P', cursive;
   }
 
   /* Image du bouton */
@@ -148,5 +149,4 @@ a {
     width: 100%;
     height: auto;
     border-radius: 8px;
-    font-family: 'Press Start 2P', cursive;
   }
