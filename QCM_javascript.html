@@ -18,8 +18,8 @@ h1{
 }
 
 .question{
-    background:#1e1e1e;
-    border-left:6px solid #4CAF50;
+    background:#313330;
+    border-left:6px solid #146911;
     padding:15px;
     margin-bottom:15px;
     border-radius:10px;
@@ -31,7 +31,7 @@ button{
     padding:8px 15px;
     border:none;
     border-radius:20px;
-    background:#4CAF50;
+    background:#0976a1;
     color:white;
     cursor:pointer;
     transition:0.3s;
@@ -148,7 +148,7 @@ a {
     <button id="btn-valider" onclick="afficherScore()">Terminer le QCM</button>
 </div>
 <div style="text-align:center;">
-    <button id="btn-valider" onclick="recomencer()">Recomencer</button>
+    <button id="btn-valider" onclick="recomencer() ,resetQuiz()" >Recomencer</button>
 </div>
 <div id="finalScore"></div>
 
@@ -273,7 +273,38 @@ function recomencer() {
   document.getElementById("btn-valider").disabled = false;
   
   
-  
+}
+function resetQuiz() {
+
+    // Effacer les radio (Vrai / Faux)
+    const radios = document.querySelectorAll("input[type='radio']");
+    radios.forEach(radio => {
+        radio.checked = false;
+    });
+
+    // Effacer les menus déroulants
+    const selects = document.querySelectorAll("select");
+    selects.forEach(select => {
+        select.selectedIndex = 0;
+    });
+
+    // Effacer les champs texte
+    const inputs = document.querySelectorAll("input[type='text']");
+    inputs.forEach(input => {
+        input.value = "";
+    });
+
+    // Effacer les corrections affichées
+    const corrections = document.querySelectorAll("[id^='corr']");
+    corrections.forEach(corr => {
+        corr.innerHTML = "";
+    });
+
+    // Effacer le score final si affiché
+    const finalScore = document.getElementById("finalScore");
+    if(finalScore){
+        finalScore.innerHTML = "";
+    }
 }
 </script>
 
